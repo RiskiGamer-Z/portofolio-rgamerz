@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio Profesional - Mahasiswa Teknik Informatika">
+    <title>Portfolio | Riski Eka Nanda</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Custom Cursor -->
+    <div class="cursor-dot"></div>
+    <div class="cursor-outline"></div>
+
+    <!-- Loading Screen -->
+    <div class="loader" id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="bracket">&lt;</span>
+                <span class="text">RGamerZ....</span>
+                <span class="bracket">&gt;</span>
+            </div>
+            <div class="loader-bar">
+                <div class="loader-progress"></div>
+            </div>
+            <p class="loader-text">Memuat Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <i class="fas fa-moon"></i>
+        <i class="fas fa-sun"></i>
+    </button>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo">
+                <span class="logo-icon">&lt;/&gt;</span>
+                <span class="logo-text">Portfolio</span>
+            </a>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <a href="assets/cv.pdf" class="btn-cv" download>
+                    <i class="fas fa-download"></i>
+                    <span>CV</span>
+                </a>
+                <button class="nav-toggle" id="navToggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-bg">
+            <div class="gradient-sphere sphere-1"></div>
+            <div class="gradient-sphere sphere-2"></div>
+            <div class="gradient-sphere sphere-3"></div>
+            <div class="grid-bg"></div>
+        </div>
+
+        <div class="hero-particles" id="heroParticles"></div>
+
+        <div class="hero-content">
+            <div class="hero-text">
+                <div class="hero-badge" data-aos="fade-down" data-aos-delay="100">
+                    <span class="badge-dot"></span>
+                    <span>Available for Work</span>
+                </div>
+                <p class="hero-greeting" data-aos="fade-up" data-aos-delay="200">Halo Semua! 👋 Saya</p>
+                <h1 class="hero-name" data-aos="fade-up" data-aos-delay="300">
+                    <span class="name-line">Riski</span>
+                    <span class="name-line gradient-text">Eka Nanda</span>
+                </h1>
+                <div class="hero-role" data-aos="fade-up" data-aos-delay="400">
+                    <span class="role-static">Saya adalah</span>
+                    <div class="role-wrapper">
+                        <span class="role-dynamic" id="typingText"></span>
+                        <span class="role-cursor"></span>
+                    </div>
+                </div>
+                <p class="hero-desc" data-aos="fade-up" data-aos-delay="500">
+                    Mahasiswa Teknik Informatika yang passionate dalam menciptakan
+                    <span class="highlight">solusi digital inovatif</span> dan
+                    <span class="highlight">pengalaman user yang memukau</span>.
+                </p>
+                <div class="hero-cta" data-aos="fade-up" data-aos-delay="600">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>Lihat Portfolio</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-outline">
+                        <span>Hubungi Saya</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </a>
+                </div>
+                <div class="hero-stats" data-aos="fade-up" data-aos-delay="700">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="15">0</span>
+                        <span class="stat-label">Projects</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="3">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Years Exp</span>
+                    </div>
+                    <div class="stat-divider"></div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="10">0</span>
+                        <span class="stat-plus">+</span>
+                        <span class="stat-label">Technologies</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-visual" data-aos="fade-left" data-aos-delay="400">
+                <div class="hero-image-container">
+                    <div class="image-glow"></div>
+                    <div class="image-border"></div>
+                    <div class="hero-image">
+                        <div class="image-placeholder">
+                            <img src="assets/images/profil3.jpg" alt="Hero Image">
+                        </div>
+                    </div>
+                    <div class="floating-card card-1">
+                        <i class="fab fa-react"></i>
+                        <span>React.js</span>
+                    </div>
+                    <div class="floating-card card-2">
+                        <i class="fab fa-laravel"></i>
+                        <span>Laravel</span>
+                    </div>
+                    <div class="floating-card card-3">
+                        <i class="fab fa-php"></i>
+                        <span>PHP</span>
+                    </div>
+                    <div class="orbit-ring"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="hero-socials">
+            <a href="https://github.com/RiskiGamer-Z" target="_blank" class="social-link" data-tooltip="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://id.linkedin.com/in/riski-eka-nanda" target="_blank" class="social-link"
+                data-tooltip="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://instagram.com/itsriski._.e" target="_blank" class="social-link" data-tooltip="Instagram">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="mailto:riskigamerz.com@gmail.com" class="social-link" data-tooltip="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+            <span>Scroll</span>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="section about" id="about">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;about&gt;</span>
+                <h2 class="section-title">Tentang <span class="gradient-text">Saya</span></h2>
+                <p class="section-desc">Mengenal lebih dekat siapa saya dan apa yang saya lakukan</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-image" data-aos="fade-right">
+                    <div class="about-img-wrapper">
+                        <div class="about-img-placeholder">
+                            <img src="assets/images/rgamer1.jpeg" alt="">
+                        </div>
+                        <div class="about-decoration">
+                            <div class="deco-line line-1"></div>
+                            <div class="deco-line line-2"></div>
+                            <div class="deco-dots"></div>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="exp-icon"><i class="fas fa-school"></i></div>
+                        <div class="exp-content">
+                            <span class="exp-number">3+</span>
+                            <span class="exp-text">Tahun Berproses</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-info" data-aos="fade-left">
+                    <div class="about-intro">
+                        <h3>Halo! Saya <span class="gradient-text">Riski Eka Nanda</span></h3>
+                        <p class="about-role">Mahasiswa Teknik Informatika Fakultas Teknik</p>
+                    </div>
+
+                    <div class="about-text">
+                        <p>Saya adalah mahasiswa semester 7 di Program Studi Teknik Informatika,
+                            <strong>Universitas Muria Kudus</strong>. Memiliki passion yang sangat kuat dalam dunia
+                            teknologi
+                            dan pengembangan software.
+                        </p>
+                        <p>Fokus utama saya adalah <span class="text-highlight">Web Development</span> dan <span
+                                class="text-highlight">Project Management</span>. Selalu antusias untuk mempelajari
+                            teknologi
+                            terbaru dan menerapkannya dalam projek nyata.</p>
+                    </div>
+
+                    <div class="about-details">
+                        <div class="detail-grid">
+                            <div class="detail-item">
+                                <i class="fas fa-user"></i>
+                                <div>
+                                    <span class="label">Nama</span>
+                                    <span class="value">Riski Eka Nanda</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-birthday-cake"></i>
+                                <div>
+                                    <span class="label">Tanggal Lahir</span>
+                                    <span class="value">01 Januari 2003</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <span class="label">Lokasi</span>
+                                    <span class="value">Kudus, Indonesia</span>
+                                </div>
+                            </div>
+                            <div class="detail-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <span class="label">Email</span>
+                                    <span class="value">riskiekannanda@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="#contact" class="btn btn-primary">
+                            <span>Hubungi Saya</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="assets/cv.pdf" class="btn btn-outline" download>
+                            <i class="fas fa-download"></i>
+                            <span>Download CV</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="section-tag section-tag-close" data-aos="fade-up">&lt;/about&gt;</span>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="section skills" id="skills">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;skills&gt;</span>
+                <h2 class="section-title">Skills & <span class="gradient-text">Teknologi</span></h2>
+                <p class="section-desc">Teknologi dan tools yang saya kuasai</p>
+            </div>
+
+            <div class="skills-tabs" data-aos="fade-up">
+                <button class="tab-btn active" data-tab="frontend">Frontend</button>
+                <button class="tab-btn" data-tab="backend">Backend</button>
+                <button class="tab-btn" data-tab="tools">Tools</button>
+                <button class="tab-btn" data-tab="soft">Soft Skills</button>
+            </div>
+
+            <div class="skills-content">
+                <!-- Frontend -->
+                <div class="skills-panel active" id="frontend" data-aos="fade-up">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-html5"></i></div>
+                            <h4>HTML5</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 95%"></div>
+                            </div>
+                            <span class="skill-percent">95%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-css3-alt"></i></div>
+                            <h4>CSS3</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 90%"></div>
+                            </div>
+                            <span class="skill-percent">90%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-js"></i></div>
+                            <h4>JavaScript</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-react"></i></div>
+                            <h4>React.js</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-vuejs"></i></div>
+                            <h4>Vue.js</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 75%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <h4>PHP</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Backend -->
+                <div class="skills-panel" id="backend">
+                    <div class="skills-grid">
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-php"></i></div>
+                            <h4>PHP</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 85%"></div>
+                            </div>
+                            <span class="skill-percent">85%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-laravel"></i></div>
+                            <h4>Laravel</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-node-js"></i></div>
+                            <h4>Node.js</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 75%"></div>
+                            </div>
+                            <span class="skill-percent">75%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fab fa-python"></i></div>
+                            <h4>Python</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 70%"></div>
+                            </div>
+                            <span class="skill-percent">70%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fas fa-database"></i></div>
+                            <h4>MySQL</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 80%"></div>
+                            </div>
+                            <span class="skill-percent">80%</span>
+                        </div>
+                        <div class="skill-card" data-tilt>
+                            <div class="skill-icon"><i class="fas fa-leaf"></i></div>
+                            <h4>MongoDB</h4>
+                            <div class="skill-level">
+                                <div class="level-bar" style="--level: 65%"></div>
+                            </div>
+                            <span class="skill-percent">65%</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tools -->
+                <div class="skills-panel" id="tools">
+                    <div class="tools-grid">
+                        <div class="tool-item"><i class="fab fa-git-alt"></i><span>Git</span></div>
+                        <div class="tool-item"><i class="fab fa-github"></i><span>GitHub</span></div>
+                        <div class="tool-item"><i class="fab fa-docker"></i><span>Docker</span></div>
+                        <div class="tool-item"><i class="fab fa-figma"></i><span>Figma</span></div>
+                        <div class="tool-item"><i class="fas fa-code"></i><span>VS Code</span></div>
+                        <div class="tool-item"><i class="fab fa-npm"></i><span>NPM</span></div>
+                        <div class="tool-item"><i class="fas fa-server"></i><span>REST API</span></div>
+                        <div class="tool-item"><i class="fab fa-linux"></i><span>Linux</span></div>
+                        <div class="tool-item"><i class="fas fa-terminal"></i><span>Terminal</span></div>
+                        <div class="tool-item"><i class="fab fa-trello"></i><span>Trello</span></div>
+                    </div>
+                </div>
+
+                <!-- Soft Skills -->
+                <div class="skills-panel" id="soft">
+                    <div class="soft-skills-grid">
+                        <div class="soft-card">
+                            <div class="soft-icon"><i class="fas fa-lightbulb"></i></div>
+                            <h4>Problem Solving</h4>
+                            <p>Menganalisis dan memecahkan masalah dengan pendekatan sistematis</p>
+                        </div>
+                        <div class="soft-card">
+                            <div class="soft-icon"><i class="fas fa-users"></i></div>
+                            <h4>Team Collaboration</h4>
+                            <p>Bekerja efektif dalam tim dengan komunikasi yang baik</p>
+                        </div>
+                        <div class="soft-card">
+                            <div class="soft-icon"><i class="fas fa-clock"></i></div>
+                            <h4>Time Management</h4>
+                            <p>Mengelola waktu dan prioritas dengan efisien</p>
+                        </div>
+                        <div class="soft-card">
+                            <div class="soft-icon"><i class="fas fa-rocket"></i></div>
+                            <h4>Fast Learner</h4>
+                            <p>Cepat beradaptasi dengan teknologi dan konsep baru</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="section-tag section-tag-close" data-aos="fade-up">&lt;/skills&gt;</span>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="section projects" id="projects">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;projects&gt;</span>
+                <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+                <p class="section-desc">Beberapa project terbaik yang telah saya kerjakan</p>
+            </div>
+
+            <div class="projects-filter" data-aos="fade-up">
+                <button class="filter-btn active" data-filter="all">
+                    <i class="fas fa-globe"></i> Web
+                </button>
+            </div>
+
+            <div class="projects-grid">
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-shopping-cart"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4>E-Commerce Platform</h4>
+                                <p>Full-stack e-commerce dengan payment gateway</p>
+                                <div class="project-links">
+                                    <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="proj-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Laravel</span><span>Vue.js</span><span>MySQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-tasks"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4>Task Management</h4>
+                                <p>Aplikasi manajemen tugas kolaboratif</p>
+                                <div class="project-links">
+                                    <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="proj-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>React</span><span>Node.js</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="300">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-utensils"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4>Food Delivery App</h4>
+                                <p>Aplikasi pesan antar makanan</p>
+                                <div class="project-links">
+                                    <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="proj-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Flutter</span><span>Firebase</span><span>Maps</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-wallet"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4>Banking App UI</h4>
+                                <p>Desain UI/UX aplikasi banking</p>
+                                <div class="project-links">
+                                    <a href="#" class="proj-link"><i class="fab fa-figma"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Figma</span><span>UI/UX</span><span>Prototype</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="500">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-graduation-cap"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4>E-Learning Platform</h4>
+                                <p>Platform pembelajaran online</p>
+                                <div class="project-links">
+                                    <a href="#" class="proj-link"><i class="fas fa-external-link-alt"></i></a>
+                                    <a href="#" class="proj-link"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Next.js</span><span>Prisma</span><span>PostgreSQL</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-category="web" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-image">
+                        <div class="project-placeholder"><i class="fas fa-heartbeat"></i></div>
+                        <div class="project-overlay">
+                            <div class="overlay-content">
+                                <h4>Health App Design</h4>
+                                <p>Desain aplikasi kesehatan</p>
+                                <div class="project-links">
+                                    <a href="#" class="proj-link"><i class="fab fa-figma"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <div class="project-tags">
+                            <span>Figma</span><span>Adobe XD</span><span>Motion</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="projects-more" data-aos="fade-up">
+                <a href="https://github.com/RiskiGamer-Z" target="_blank" class="btn btn-outline">
+                    <span>Lihat Semua di GitHub</span>
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+        <span class="section-tag section-tag-close" data-aos="fade-up">&lt;/projects&gt;</span>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="section experience" id="experience">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;experience&gt;</span>
+                <h2 class="section-title">Pengalaman & <span class="gradient-text">Pendidikan</span></h2>
+                <p class="section-desc">Perjalanan karir dan pendidikan saya</p>
+            </div>
+
+            <div class="timeline-tabs" data-aos="fade-up">
+                <button class="timeline-tab active" data-timeline="work">
+                    <i class="fas fa-briefcase"></i> Pengalaman
+                </button>
+                <button class="timeline-tab" data-timeline="education">
+                    <i class="fas fa-graduation-cap"></i> Pendidikan
+                </button>
+                <button class="timeline-tab" data-timeline="certificate">
+                    <i class="fas fa-certificate"></i> Sertifikasi
+                </button>
+            </div>
+
+            <div class="timeline-content">
+                <!-- Work Timeline -->
+                <div class="timeline active" id="work">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"><i class="fas fa-briefcase"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2024 - Sekarang</span>
+                            <h4>Web Developer Intern</h4>
+                            <p class="timeline-company">Kampus Digital Indonesia</p>
+                            <ul class="timeline-desc">
+                                <li>Mengembangkan fitur frontend dengan React.js</li>
+                                <li>Integrasi REST API dan optimasi performa</li>
+                                <li>Kolaborasi tim menggunakan Git dan Agile</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"><i class="fas fa-chalkboard-teacher"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2022 - 2023</span>
+                            <h4>Asisten Laboratorium</h4>
+                            <p class="timeline-company">Lab Pemrograman - Universitas</p>
+                            <ul class="timeline-desc">
+                                <li>Membimbing 50+ mahasiswa praktikum</li>
+                                <li>Menyusun modul praktikum pemrograman</li>
+                                <li>Menilai tugas dan ujian praktikum</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"><i class="fas fa-laptop-code"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2022</span>
+                            <h4>Freelance Web Developer</h4>
+                            <p class="timeline-company">Self-employed</p>
+                            <ul class="timeline-desc">
+                                <li>Mengerjakan 10+ project website</li>
+                                <li>Company profile dan e-commerce</li>
+                                <li>Maintenance dan support klien</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Education Timeline -->
+                <div class="timeline" id="education">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"><i class="fas fa-university"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2022 - Sekarang</span>
+                            <h4>S1 Teknik Informatika</h4>
+                            <p class="timeline-company">Universitas Muria Kudus</p>
+                            <ul class="timeline-desc">
+                                <li>IPK: 3.68 / 4.00</li>
+                                <li>Aktif di organisasi kemahasiswaan</li>
+                                <li>Asisten laboratorium pemrograman</li>
+                                <li>Ketua PMII Rayon Teknik</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"><i class="fas fa-school"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2018 - 2021</span>
+                            <h4>SMA Muhammadiyah 5 Todanan</h4>
+                            <p class="timeline-company">Jurusan IPA</p>
+                            <ul class="timeline-desc">
+                                <li>Nilai Akhir: 9.5</li>
+                                <li>Anggota Ikatan Pelajar Muhammadiyah</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Certification Timeline -->
+                <div class="timeline" id="certificate">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"><i class="fas fa-award"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2023</span>
+                            <h4>Meta Front-End Developer</h4>
+                            <p class="timeline-company">Coursera - Meta</p>
+                            <ul class="timeline-desc">
+                                <li>React, JavaScript, UI/UX principles</li>
+                                <li>Responsive web design</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"><i class="fas fa-certificate"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2023</span>
+                            <h4>Belajar Membuat Aplikasi Web</h4>
+                            <p class="timeline-company">Dicoding Indonesia</p>
+                            <ul class="timeline-desc">
+                                <li>JavaScript, REST API, Web Components</li>
+                                <li>PWA dan Web Storage</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"><i class="fas fa-medal"></i></div>
+                        <div class="timeline-card">
+                            <span class="timeline-date">2022</span>
+                            <h4>Python for Data Science</h4>
+                            <p class="timeline-company">Coursera</p>
+                            <ul class="timeline-desc">
+                                <li>Python, Pandas, NumPy</li>
+                                <li>Data visualization dengan Matplotlib</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <span class="section-tag section-tag-close" data-aos="fade-up">&lt;/experience&gt;</span>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <span class="section-tag">&lt;contact&gt;</span>
+                <h2 class="section-title">Let's <span class="gradient-text">Connect</span></h2>
+                <p class="section-desc">Tertarik untuk bekerja sama? Mari berdiskusi!</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <h3>Hubungi Saya</h3>
+                    <p>Saya selalu terbuka untuk diskusi tentang project baru, peluang kreatif, atau sekadar say hello!
+                    </p>
+
+                    <div class="contact-cards">
+                        <a href="mailto:riskigamerz@gmail.com" class="contact-card">
+                            <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="card-content">
+                                <span class="card-label">Email</span>
+                                <span class="card-value">riskigamerz@gmail.com</span>
+                            </div>
+                        </a>
+                        <a href="tel:+6281999444619" class="contact-card">
+                            <div class="card-icon"><i class="fas fa-phone"></i></div>
+                            <div class="card-content">
+                                <span class="card-label">Phone</span>
+                                <span class="card-value">+62 819 994 446 19</span>
+                            </div>
+                        </a>
+                        <div class="contact-card">
+                            <div class="card-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="card-content">
+                                <span class="card-label">Location</span>
+                                <span class="card-value">Kudus, Jawa Tengah, Indonesia</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <h4>Follow Me</h4>
+                        <div class="social-links">
+                            <a href="https://github.com/RiskiGamer-Z" class="social-item"><i class="fab fa-github"></i></a>
+                            <a href="https://linkedin.com/in/riski-eka-nanda" class="social-item"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="https://instagram.com/itsriski._.e" class="social-item"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contactForm" data-aos="fade-left">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="name">Nama</label>
+                            <input type="text" id="name" name="name" required placeholder="Nama Anda">
+                            <span class="focus-border"></span>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required placeholder="email@example.com">
+                            <span class="focus-border"></span>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required placeholder="Subject pesan">
+                        <span class="focus-border"></span>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Pesan</label>
+                        <textarea id="message" name="message" rows="5" required
+                            placeholder="Tulis pesan Anda..."></textarea>
+                        <span class="focus-border"></span>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-submit">
+                        <span>Kirim Pesan</span>
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <span class="section-tag section-tag-close" data-aos="fade-up">&lt;/contact&gt;</span>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-wave">
+            <svg viewBox="0 0 1440 100" preserveAspectRatio="none">
+                <path d="M0,50 C360,100 720,0 1080,50 C1260,75 1380,50 1440,50 L1440,100 L0,100 Z"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#home" class="footer-logo">
+                        <span>&lt;/&gt;</span> Portfolio
+                    </a>
+                    <p>Mahasiswa Teknik Informatika yang passionate dalam menciptakan solusi digital.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <a href="mailto:email@example.com"><i class="fas fa-envelope"></i> riskigamerz@gmail.com</a>
+                    <a href="tel:+628123456789"><i class="fas fa-phone"></i> +62 819 994 446 19</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>Made with <i class="fas fa-heart pulse"></i> by <span class="gradient-text">Riski Eka Nanda</span>
+                </p>
+                <p>&copy; 2025 All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Scripts -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-tilt@1.8.1/dist/vanilla-tilt.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
